@@ -1,0 +1,235 @@
+body {
+    margin: 0 auto;
+    line-height: 1.4;
+    background: url(images/bg-body.gif) no-repeat top center #e4e4da;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article,
+aside,
+footer {
+    padding-left: 1.875em;    
+    padding-right: 1.875em;
+}
+a:visited {
+    color: white;
+}
+header img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+header nav {
+    transition: max-height 0.5s;
+    max-height: 0px;
+    overflow: hidden;
+}
+input {
+    display: none;
+}
+label {
+    visibility: visible;
+    width: 100%;
+    text-align: right;
+}
+label {
+    color: #be4b14;
+    background-color: #e4e4da;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 9px;
+}
+label:hover {
+    color: #be4b14;
+}
+label span {
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+input:checked + label span {
+    transform: rotate(90deg);
+}
+input:checked ~ nav {
+    transition: max-height 0.5s;
+    max-height: 120px;
+}
+/*  Þurfti að notast við þetta til að losna við white space í valmynd*/
+
+ul.zero-size {
+    font-size: 0px;
+    padding-left: 0px;
+}
+ul.zero-size li {
+    font-size: 16px;
+}
+/*--------------------------------------------------------------------*/
+
+.valmynd a
+{
+    color: white;
+    text-decoration: none;
+}
+.valmynd{
+    background-color: #be4b14;
+}
+.valmynd li {
+    list-style-type: none;
+}
+.valmynd a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.valmynd a:hover {
+    transition: background-color linear .5s;
+    background: #e4e4da;
+    color: #be4b14;
+}
+
+aside img {
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 30px;
+    max-width: 100%;
+}
+/*
+  ========================================
+  Grid system
+  ========================================
+*/
+
+.grid,
+.col-1-3,
+.col-2-3,
+.col-1-2 {
+    padding: 0 1em;
+}
+.col-1-3,
+.col-2-3,
+.col-1-2 {
+    vertical-align: top;
+}
+.col-1-2 a {
+    color: black;
+    text-decoration: none;
+}
+footer {
+    background-color: #be4b14;
+}
+footer nav ul {
+    padding-left: 0px;
+    margin-right: 1em;
+}
+footer nav li {
+    list-style-type: none;
+}
+footer nav a {
+	color:white;
+	text-decoration: none;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.fContact {
+    color: white;
+    text-align: center;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    clear: both;
+    *zoom: 1;
+}
+@media screen and (min-width: 30em) {
+    .col-1-2 {
+        max-width: 50%;
+        float: left;
+    }
+}
+@media screen and (min-width: 48em) {
+    label {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+        padding: 0px;
+    }
+    .valmynd,
+    footer {
+        width: 100%;
+    }
+    .valmynd {
+        text-align: center;
+    }
+    .valmynd li {
+        display: inline-block;
+        border-left: 1px solid white;
+    }
+    .valmynd li:last-child {
+        border-right: 1px solid white;
+    }
+    .valmynd a {
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 8px 30px;
+        border-bottom: 0px;
+    }
+    body {
+        max-width: 60em;
+    }
+    aside img {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    footer nav {
+        width: 50%;
+        float: left;
+    }
+    .col-1-3,
+    .col-2-3,
+    .col-1-2 {
+        float: left;        
+        vertical-align: top;
+    }
+    .col-1-3 {
+        width: 33.333%;
+    }
+    .col-2-3 {
+        width: 66.666%;
+    }
+    .col-1-2 {
+        width: 50%;
+    }
+    .flleft {
+        float: left;
+    }
+    .flright {
+        float: right;
+    }
+}
+@media screen and (min-width: 60em) {
+    label {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        padding: 0px;
+    }
+}
