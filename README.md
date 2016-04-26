@@ -10,4 +10,4 @@ Lykilmats atriði fyrir VSH
  
  4.Skipulag vefsins - veftré  oForsíða Með helstu upplýsingum sem fólk þyrfti að nálgast oBílastæðinUpplýsingar um bílastæðin á flugvellinum oVerðskrá Tafla með verðskrá oPanta Þjónustu Þjónustupöntunar síða, (Nafn,símanúmer o.s.frv....) oHafa Samband Fylla út Nafn símanúmer netfang og skilaboð 
  
- 5.Uppdráttur – skissa af skipulagi og útliti vefsíðu.  
+5.Prototypa – http://tsuts.tskoli.is/2t/1810943469/Skilaverkefni7/index.html  
